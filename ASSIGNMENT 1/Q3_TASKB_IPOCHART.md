@@ -1,0 +1,7 @@
+|INPUT |PROCESSING|OUTPUT|
+|---|---|---|
+|NUMBER OF STUDENTS|SUM=0||
+|SUBJECT1,SUBJECT2,SUBJECT3,SUBJECT4,SUBJECT5|AVERAGE =0||
+||CHECK EACH SUBJECT MARK > 33||
+||ELSE DIRECT TOWRDS OUTPUT||
+|||PRINT MESSAGE ACCORIDNG TO CONDITION(Average of 80 or above → "Distinction". Average of 60 or above and below 80 → "Pass". Average below 60 → "Fail".)|
