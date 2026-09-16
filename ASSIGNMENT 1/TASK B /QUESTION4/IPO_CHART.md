@@ -1,3 +1,4 @@
+# ONLINE SHOPPING BILL CALCULATOR
 |INPUT|PROCESSING|OUTPUT|
 |---|---|---|
 |price, quantity, tax(%),discount(%)|subtotal=0,discount=0,finalprice=0||
