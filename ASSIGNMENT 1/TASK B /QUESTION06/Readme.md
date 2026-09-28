@@ -18,9 +18,9 @@
 
 ![Flowchart 1](FLOWCHART/6B1F.png)
 
-![Flowchart 2](FLOWCHART/6B2F.png)
+![Flowchart 2](FLOWCHART/6BF2.png)
 
-![Flowchart 3](FLOWCHART/6B3F.png)
+![Flowchart 3](FLOWCHART/6BF3.png)
 
-![Flowchart 4](FLOWCHART/6B4F.png)
+![Flowchart 4](FLOWCHART/6BF4.png)
 
