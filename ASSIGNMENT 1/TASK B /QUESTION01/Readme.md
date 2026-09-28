@@ -1,0 +1,9 @@
+# Question 1
+
+## ALGORITHM
+
+![ALGO](Q1B%20ALGO.jpeg)
+
+## FLOWCHART
+
+[View FLOWCHART](Q1B%20FLOWCHART.docx)
