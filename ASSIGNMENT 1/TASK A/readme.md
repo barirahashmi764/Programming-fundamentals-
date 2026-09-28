@@ -1,3 +1,3 @@
-**Name = Barira Hashmi**
-**Rollno. = 26K-2505**
-**Department = BS Data science**
+**Name = Barira Hashmi**<br>
+**Rollno. = 26K-2505**<br>
+**Department = BS Data science**<br>
