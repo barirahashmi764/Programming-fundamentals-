@@ -6,6 +6,6 @@
 
 ## FLOWCHART
 
-![Flowchart 1](Q1%20FLOWCHART%201.PNG)
+![Flowchart 1](Q1%20FLOWCHART%201.png)
 
-![Flowchart 2](Q1%20FLOWCHART%202.PNG)
+![Flowchart 1](Q1%20FLOWCHART%202.png)
