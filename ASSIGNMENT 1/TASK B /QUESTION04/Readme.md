@@ -1,0 +1,5 @@
+**ALGORITHM**
+![ALGORITHM 4](Q4B%20ALGO.jpeg)
+
+**FLOWCHART**
+![Flowchart 4](Q4B%20FLOWCHART.jpeg)
