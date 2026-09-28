@@ -13,6 +13,6 @@
 ![Algorithm 5](Algorithm/5B5.png)
 ## Flowcharts
 
-![Flowchart 1](FLOWCHART/5B1F.png)
+![Flowchart 1](Flowchart/5B1F.png)
 
-![Flowchart 2](FLOWCHART/5B2F.png)
+![Flowchart 2](Flowchart/5B2F.png)
