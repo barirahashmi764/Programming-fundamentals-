@@ -1,5 +1,5 @@
 **ALGORITHM**
-![ALGORITHM 3](Q3B%20ALGO.jpeg)
+![ALGORITHM 3](Q3%20ALGO.jpeg)
 
 **FLOWCHART**
 ![Flowchart 3](Q3B%20FLOWCHART.jpeg)
