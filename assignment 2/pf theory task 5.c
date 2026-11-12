@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<string.h>
+//function to display the menu to the user
 void displayMenu(){
     printf("\n===== UNIVERSITY LIBRARY MANAGEMENT SYSTEM =====\n");
     printf("1. Register Member\n");
@@ -10,7 +11,7 @@ void displayMenu(){
     printf("6. Exit\n");
     printf("Enter your choice: ");
 }
-
+//function to register a new member
 void registerMember(char name[], int *studentID, int *memberType){
 	printf("Enter Member Name :\n");
 	scanf(" %[^\n]", name);
@@ -23,14 +24,14 @@ void registerMember(char name[], int *studentID, int *memberType){
 	scanf("%d",memberType);
 	}
 }
-
+//function to display the available books
 void displayBooks(int bookIDs[], char bookTitles[][50], int availableCopies[],int totalBooks){
 	int i;
     for(i=0;i<totalBooks;i++){
     	printf("| %d \t|    %s \t        |   %d |\n",bookIDs[i],bookTitles[i],availableCopies[i]);
 	}
 }
-
+//function to boorow books
 void borrowBook(int bookIDs[], char bookTitles[][50], int availableCopies[],
 int totalBooks, int borrowedBookIDs[], int *borrowedCount, int memberType){
 	int bookID;
@@ -70,7 +71,7 @@ int totalBooks, int borrowedBookIDs[], int *borrowedCount, int memberType){
 	(*borrowedCount)++;
 	availableCopies[index]--;
 }
-
+//function to return a book
 float returnBook(int bookIDs[], int availableCopies[], int totalBooks, int
 borrowedBookIDs[], int *borrowedCount, int memberType, float *totalFine){
 	int bookID;
@@ -135,7 +136,7 @@ borrowedBookIDs[], int *borrowedCount, int memberType, float *totalFine){
 	(*borrowedCount)--;
 	return fine;
 }
-
+//function to display member record
 void displayMemberRecord(char name[], int studentID, int memberType, int
                           borrowedBookIDs[], int borrowedCount, float totalFine, float fineAfterWaiver){
                 	printf("Member Name: %s\n", name);
@@ -157,7 +158,7 @@ void displayMemberRecord(char name[], int studentID, int memberType, int
                   printf("Total fine charged before waiver : %.2f\n",totalFine);
                   printf("Final fine payable after waiver : %.2f\n",fineAfterWaiver);
 }
-
+//main function 
 int main(){
    int bookIDs[]={101,102,103,104};
    char bookTitles[][50]={"Programming in C","Data Structures","Database System","Computer Networks"};
