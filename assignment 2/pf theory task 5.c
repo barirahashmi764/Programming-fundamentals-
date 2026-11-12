@@ -19,6 +19,7 @@ void registerMember(char name[], int *studentID, int *memberType){
 	scanf("%d",studentID);
 	printf("Enter member type : \n 1-Faculty \n 2-Student \n");
 	scanf("%d",memberType);
+	//validating member type
 	while(*memberType<1||*memberType>2){
 	printf("Enter member type : \n 1-Faculty \n 2-Student \n");
 	scanf("%d",memberType);
@@ -43,30 +44,35 @@ int totalBooks, int borrowedBookIDs[], int *borrowedCount, int memberType){
 	scanf("%d",&bookID);
 	printf("Enter days you want to borrow it for :\n");
 	scanf("%d",&days);
+	//validating days
 	while(days<=0){
 		printf("Invalid!\n");
 		printf("Enter days you want to borrow it for :\n");
 	    scanf("%d",&days);
 	}
+	//finding the book to borrow
 	for(i=0;i<totalBooks;i++){
 		if(bookID==bookIDs[i]){
 			index=i;
 			break;
 		}
 	}
+	//checking if the bookid for borrowing is wrong
 	if(index==-1){
 		printf("Invalid Book ID !\n");
 		return;
 	}
+	//checking to see available copies
 	if(availableCopies[index]==0){
 		printf("Sorry! No available copies.\n");
 		return;
 	}
+	//checking borrow limit 
 	if(*borrowedCount>=3){
 		printf("You have reached the limit !\n");
 		return;
 	}
-	
+	//updating data
 	borrowedBookIDs[*borrowedCount]=bookID;
 	(*borrowedCount)++;
 	availableCopies[index]--;
@@ -82,38 +88,42 @@ borrowedBookIDs[], int *borrowedCount, int memberType, float *totalFine){
     int days;
     printf("Enter the actual number of days the book was kept:\n");
     scanf("%d", &days);
+//validating days
     while(days <= 0){
     printf("Invalid days! Enter again:\n");
     scanf("%d", &days);
        }
     printf("Enter the Book ID you want to return :\n");
     scanf("%d",&bookID);
+	//finding the bookid
     for(i=0;i<totalBooks;i++){
     	if(bookID==bookIDs[i]){
     		index=i;
     		break;
 		}
 	}
+	//checking if the book id matched the borrowed bookid
 	for(i=0;i<*borrowedCount;i++){
 		if(bookID==borrowedBookIDs[i]){
 			borrowIndex=i;
 			break;
 		}
 	}
+	
 	if(index == -1){
     printf("Invalid Book ID!\n");
     return 0;
      }
- 
+ //checking if found 
     if(borrowIndex == -1){
     printf("You have not borrowed this book!\n");
     return 0;
        }
-       
+      //updating borrowbookid array  
 	for(i = borrowIndex; i < *borrowedCount - 1; i++){
     borrowedBookIDs[i] = borrowedBookIDs[i+1];
           }
-          
+          //checking member type
    if(memberType == 1){
         if(days > 30){
         fine = (days - 30) * 10;
@@ -132,6 +142,7 @@ borrowedBookIDs[], int *borrowedCount, int memberType, float *totalFine){
           fine = fine * 0.5;
        }
        *totalFine = *totalFine + fine;
+	//updating 
 	availableCopies[index]++;
 	(*borrowedCount)--;
 	return fine;
