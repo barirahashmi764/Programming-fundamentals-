@@ -4,10 +4,10 @@ int sum_divisors(int n){
 	for(i=1;i<=n/2;i++){
 		if(n%i==0){
 			sum=sum+i;
-		}
-	}
+		}//end if
+	}end for
 	return sum;		
-}
+}end function 
 int main(){
 	int n,i,j,sum_1=0,sum_2=0,count=0;
 	printf("enter a number :");
@@ -23,9 +23,9 @@ int main(){
             if(sum_2 == i && i < j){
                 printf("Amicable pair: (%d, %d)\n", i, j);
                 count++;
-            }
-        }       
-}
+            }//end if(i)
+        }    //end if(j)   
+}//end for
          if(count==0)
             printf("No Amicable pairs found .\n");
            else
@@ -33,4 +33,4 @@ int main(){
 
 	
 return 0;
-}
+}//end main
