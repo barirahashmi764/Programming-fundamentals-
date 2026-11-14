@@ -6,8 +6,8 @@ void input(int n ,int n_readings,int temp[n][n_readings]){
 		for(j=0;j<n_readings;j++){
 			printf("Enter reading for sensor %d, hour %d: ", i+1, j+1);
 			scanf("%d",&temp[i][j]);
-		}
-	}
+		}//end for(j)
+	}end for (i)
 }//end input function
 
 // sensor analysis function
@@ -28,37 +28,37 @@ void sensor_analysis(int n ,int n_readings,int temp[n][n_readings]){
 			//calculating highet temp
 			if(temp[i][j] > highest){
                highest = temp[i][j];
-              } 
+              } //enf if
             //calculating lowest temp
             if(temp[i][j] < lowest){
                  lowest = temp[i][j]; 
-              }
+              }//end if
             //calculating number of critical readings
             if(temp[i][j]>=40){
             	critical_readings++;
-			}
+			}//end if
 			//calculating number of warning readings
 			if(temp[i][j]>=35&&temp[i][j]<=39){
 				warning_readings++;
-			}
+			}//end if
 			//calculating longest streak 
 			if(temp[i][j] >= 35){
                  current_streak++;
             if(current_streak > longest_streak){
                    longest_streak = current_streak;
-                  }
-                   }
+                  }//end if(current streak)
+                   }//end if(temp)
             else{
                    current_streak = 0;
-                } 
-		}
+                } //end else
+		}//end for(j)
 		avg_t=(float)sum_t/n_readings;
 		//Report for sensors
 		printf("Sensor %d: Total=%d  Avg=%.2f  Max=%d  Min=%d\n",i+1, sum_t, avg_t, highest, lowest);
         printf("            Critical=%d  Warning=%d  Longest hot streak=%d\n",critical_readings, warning_readings, longest_streak);
         printf("\n");
-	}
-}
+	}//end for(i)
+}//end function
 // Sensor number with highest temp average
 int Highest_average(int n, int n_readings, int temp[n][n_readings],float *highest_avg){
     int i, j, sum;
@@ -73,17 +73,17 @@ int Highest_average(int n, int n_readings, int temp[n][n_readings],float *highes
         for(j = 0; j < n_readings; j++){
              // Calculate sum
              sum=sum+temp[i][j];
-        }
+        }//end for(j)
         // Calculate average
         avg=(float)sum/n_readings;
         // Compare average with highest_avg
          if(avg>*highest_avg){
          	*highest_avg=avg;
          	highest_sensor=i+1;
-		 }
-    }
+		 }//end if
+    }//end for(i)
     return highest_sensor;
-}
+}//end function
 
 int main(){
 	int n , n_readings,result;
@@ -98,4 +98,4 @@ int main(){
 	result=Highest_average(n,n_readings,temp,&highest_average);
 	printf("Highest average : Sensor %d (%.2f)",result,highest_average);
 	return 0;
-}
+}//end main 
