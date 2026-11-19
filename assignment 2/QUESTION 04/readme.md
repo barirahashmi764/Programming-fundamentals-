@@ -1,1 +1,7 @@
+# Question 4
+
+
+![QUESTION 04](Q4%20PART%201.jpeg)
+![QUESTION 04](Q4%20PART%202.jpeg)
+![QUESTION 04](Q4%20PART%203.jpeg)
 
