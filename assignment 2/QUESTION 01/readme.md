@@ -1,7 +1,7 @@
 # Question 1
 
 
-![QUESTION 01](Q01%20part%201.jpeg)
-![QUESTION 01](Q01%20part%202.jpeg)
-![QUESTION 01](Q01%20part%203.jpeg)
-![QUESTION 01](Q01%20part%204.jpeg)
+![QUESTION 01](Q1%20PART%201.jpeg)
+![QUESTION 01](Q1%20PART%202.jpeg)
+![QUESTION 01](Q1%20PART%203.jpeg)
+![QUESTION 01](Q1%20PART%204.jpeg)
